@@ -180,12 +180,15 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 26, 0);
-  transition: all 0.35s ease-in-out;
+  background-color: rgba(0, 0, 26, 0.45);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
 }
 
 .overlay.show {
-  background-color: rgba(0, 0, 26, 0.45);
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu-mobile {
@@ -221,11 +224,11 @@ button {
   align-items: center;
   justify-content: space-between;
   color: var(--darkGrayishBlue);
+  cursor: pointer;
 }
 
 .menu-desktop-item:hover {
   color: var(--softRed);
-  cursor: pointer;
 }
 
 .hide-for-desktop {
@@ -270,6 +273,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-top: var(--mt-30);
+  cursor: pointer;
 }
 
 .read-more-btn:hover {
