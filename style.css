@@ -153,7 +153,6 @@ button {
   width: 40px;
   height: 17px;
   right: 0;
-  cursor: pointer;
   background-image: url(/images/icon-menu.svg);
   background-repeat: no-repeat;
   background-size: contain;
