@@ -60,6 +60,11 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+  color: inherit;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
 img,
