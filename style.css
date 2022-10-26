@@ -28,6 +28,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 html:focus-within {
@@ -43,13 +44,14 @@ html:focus-within {
 
 body {
   margin: 0;
-  padding: 2.2rem 1rem;
   font-family: "Inter", sans-serif;
   background-color: var(--offWhite);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+  /* position: relative; */
+  height: 100%;
 }
 
 body.noscroll {
@@ -115,8 +117,8 @@ button {
 /* CONTAINER */
 
 .container {
-  position: relative;
   width: 100%;
+  padding: 2.2rem 1rem;
   height: fit-content;
   overflow-x: hidden;
   max-width: 69.4rem;
@@ -178,10 +180,8 @@ button {
 /* OVERLAY */
 
 .overlay {
-  z-index: 9;
   min-height: 100vh;
   min-width: 100vw;
-  overflow-x: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -190,7 +190,7 @@ button {
   background-color: rgba(0, 0, 26, 0.45);
   visibility: hidden;
   opacity: 0;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .overlay.show {
@@ -199,15 +199,15 @@ button {
 }
 
 .menu-mobile {
-  z-index: 10;
+  z-index: 9;
   min-height: 100vh;
-  width: 15.6rem;
+  width: 16rem;
   background-color: var(--offWhite);
   position: absolute;
   padding: 10rem var(--pb-25);
-  top: 0;
-  right: -15.6rem;
-  transition: all 0.35s ease-in-out;
+  top: -2.2rem;
+  right: -16rem;
+  transition: all 0.25s ease-in-out;
 }
 
 .menu-mobile-item {
@@ -221,7 +221,7 @@ button {
 }
 
 .menu-mobile.show {
-  right: 0;
+  right: -25px;
 }
 
 /* MENU DESKTOP */

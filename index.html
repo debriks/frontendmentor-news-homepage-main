@@ -24,16 +24,6 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <div class="overlay" id="overlay"></div>
-    <div class="menu-mobile" id="menuMobile">
-      <ul>
-        <li class="menu-mobile-item"><a href="#"> Home</a></li>
-        <li class="menu-mobile-item"><a href="#">New</a></li>
-        <li class="menu-mobile-item"><a href="#">Popular</a></li>
-        <li class="menu-mobile-item"><a href="#">Trending</a></li>
-        <li class="menu-mobile-item"><a href="#">Categories</a></li>
-      </ul>
-    </div>
     <main class="container">
       <!-- GRID AREA HEADER -->
 
@@ -54,11 +44,18 @@
           </div>
           <div class="btn-hamburger hide-for-desktop" id="btnHamburger"></div>
           <ul id="menuDesktop" class="menu-desktop hide-for-mobile">
-            <li><a href="#" class="menu-desktop-item"> Home</a></li>
-            <li><a href="#" class="menu-desktop-item">New</a></li>
-            <li><a href="#" class="menu-desktop-item">Popular</a></li>
-            <li><a href="#" class="menu-desktop-item">Trending</a></li>
-            <li><a href="#" class="menu-desktop-item">Categories</a></li>
+            <li class="menu-desktop-item"><a href="#">Home</a></li>
+            <li class="menu-desktop-item"><a href="#">New</a></li>
+            <li class="menu-desktop-item"><a href="#">Popular</a></li>
+            <li class="menu-desktop-item"><a href="#">Trending</a></li>
+            <li class="menu-desktop-item"><a href="#">Categories</a></li>
+          </ul>
+          <ul id="menuMobile" class="menu-mobile">
+            <li class="menu-mobile-item"><a href="#">Home</a></li>
+            <li class="menu-mobile-item"><a href="#">New</a></li>
+            <li class="menu-mobile-item"><a href="#">Popular</a></li>
+            <li class="menu-mobile-item"><a href="#">Trending</a></li>
+            <li class="menu-mobile-item"><a href="#">Categories</a></li>
           </ul>
         </nav>
       </header>
@@ -152,6 +149,7 @@
         </article>
       </footer>
     </main>
+    <div class="overlay" id="overlay"></div>
     <script src="app.js"></script>
   </body>
 </html>
