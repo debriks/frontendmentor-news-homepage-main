@@ -116,6 +116,7 @@ button {
 
 .container {
   width: 100%;
+  overflow-x: hidden;
   height: fit-content;
   max-width: 69.4rem;
   display: grid;
