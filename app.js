@@ -1,11 +1,9 @@
-const btnHamburger = document.querySelector("#menuMobile");
+const btnHamburger = document.getElementById("btnHamburger");
+const menuMobile = document.getElementById("menuMobile");
+const overlay = document.getElementById("overlay");
 
-const menuMobile = document.querySelector(".menu-mobile");
-
-btnHamburger.addEventListener("click", function () {
-  if (menuMobile.classList.contains("open")) {
-    menuMobile.classList.remove("open");
-  } else {
-    menuMobile.classList.add("open");
-  }
+btnHamburger.addEventListener("click", () => {
+  btnHamburger.classList.toggle("close");
+  overlay.classList.toggle("show");
+  menuMobile.classList.toggle("show");
 });
