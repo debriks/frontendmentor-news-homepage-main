@@ -21,7 +21,7 @@
 
   /* Typography */
 
-  --fs-16: 1rem;
+  --fs-14: 0.9rem;
   --fs-32: 2rem;
 }
 
@@ -50,8 +50,8 @@ body {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
-  /* position: relative; */
   height: 100%;
+  scrollbar-width: none;
 }
 
 body.noscroll {
@@ -265,8 +265,8 @@ button {
 }
 
 .hero-text {
-  font-size: var(--fs-16);
-  line-height: 1.6;
+  font-size: var(--fs-14);
+  line-height: 1.7;
   color: var(--darkGrayishBlue);
   padding-right: 1.25rem;
   margin-top: var(--mt-30);
@@ -276,7 +276,7 @@ button {
   padding: 1rem 1.875rem;
   background-color: var(--softRed);
   color: var(--offWhite);
-  font-size: var(--fs-16);
+  font-size: var(--fs-14);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -317,10 +317,10 @@ button {
 }
 
 .grid-aside article p {
-  font-size: var(--fs-16);
+  font-size: var(--fs-14);
   line-height: 1.7;
   color: var(--grayishBlue);
-  padding: 0 1rem 0.625rem 0;
+  padding: 0 0.7rem 0.625rem 0;
 }
 
 .divider {
@@ -364,7 +364,7 @@ button {
 
 .footer-text p {
   color: var(--darkGrayishBlue);
-  font-size: var(--fs-16);
+  font-size: var(--fs-14);
   line-height: 1.7;
   margin-top: 5px;
 }
