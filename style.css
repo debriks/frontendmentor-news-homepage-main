@@ -49,6 +49,11 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
+}
+
+body.noscroll {
+  overflow: hidden;
 }
 
 a,
@@ -151,7 +156,7 @@ button {
   transition: all 0.35s ease-in-out;
 }
 
-.btn-hamburger.close {
+.btn-hamburger.open {
   width: 32px;
   height: 31px;
   transform: rotate(180deg);
@@ -197,6 +202,11 @@ button {
 .menu-mobile-item {
   font-size: 1.125rem;
   padding-bottom: var(--pb-25);
+  cursor: pointer;
+}
+
+.menu-mobile-item:hover {
+  color: var(--softRed);
 }
 
 .menu-mobile.show {
